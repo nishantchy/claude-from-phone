@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Haven - Premium Hotel Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">Luxury Haven</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-cta" onclick="scrollToSection('contact')">Book Now</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1542314503-37143f4f6b73?w=1600&q=80" alt="Luxury hotel lobby" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Luxury Hospitality Since 2010</div>
+            <h1 class="hero-title">Where Elegance Meets Comfort</h1>
+            <p class="hero-subtitle">Experience world-class hospitality in the heart of the city</p>
+            <button class="hero-cta" onclick="scrollToSection('rooms')">Discover Rooms</button>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-content">
+                    <h2>Welcome to Paradise</h2>
+                    <p>Nestled in the heart of the city, Luxury Haven stands as a beacon of excellence in hospitality. Our commitment to personalized service, world-class amenities, and stunning architecture creates an unforgettable experience for every guest.</p>
+                    <div class="intro-features">
+                        <div class="feature-item">
+                            <div class="feature-number">15+</div>
+                            <div class="feature-label">Years Excellence</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-number">500+</div>
+                            <div class="feature-label">Happy Guests</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-number">5★</div>
+                            <div class="feature-label">Star Rating</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <img src="https://images.unsplash.com/photo-1631049307038-da0ec9d70304?w=600&q=80" alt="Hotel lounge">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Rooms Section -->
+    <section class="rooms" id="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Exquisite Rooms & Suites</h2>
+                <p>Choose from our carefully curated collection of luxurious accommodations</p>
+            </div>
+            <div class="rooms-grid">
+                <div class="room-card" data-room="standard">
+                    <div class="room-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1591088323753-b95425f0ebb9?w=500&q=80" alt="Standard Room" class="room-image">
+                        <div class="room-overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-badge">Popular Choice</div>
+                        <h3>Standard Room</h3>
+                        <p class="room-description">Perfect for travelers seeking comfort and elegance with modern amenities.</p>
+                        <div class="room-specs">
+                            <span class="spec">👥 2 Guests</span>
+                            <span class="spec">📏 280 sq ft</span>
+                            <span class="spec">🏙️ City View</span>
+                        </div>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="currency">$</span>
+                                <span class="amount">129</span>
+                                <span class="period">/night</span>
+                            </div>
+                            <button class="book-btn">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card featured" data-room="deluxe">
+                    <div class="featured-badge">✨ Featured</div>
+                    <div class="room-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1578683078519-2f2f1d79f642?w=500&q=80" alt="Deluxe Room" class="room-image">
+                        <div class="room-overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-badge">Best Value</div>
+                        <h3>Deluxe Suite</h3>
+                        <p class="room-description">Spacious suite with premium furnishings and panoramic views of the cityscape.</p>
+                        <div class="room-specs">
+                            <span class="spec">👥 4 Guests</span>
+                            <span class="spec">📏 450 sq ft</span>
+                            <span class="spec">🌆 Panoramic View</span>
+                        </div>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="currency">$</span>
+                                <span class="amount">249</span>
+                                <span class="period">/night</span>
+                            </div>
+                            <button class="book-btn primary">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room="penthouse">
+                    <div class="room-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&q=80" alt="Penthouse" class="room-image">
+                        <div class="room-overlay">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-badge">Ultra Luxury</div>
+                        <h3>Presidential Suite</h3>
+                        <p class="room-description">Ultimate luxury penthouse with private butler service and exclusive amenities.</p>
+                        <div class="room-specs">
+                            <span class="spec">👥 6 Guests</span>
+                            <span class="spec">📏 800 sq ft</span>
+                            <span class="spec">🏰 Premium Suite</span>
+                        </div>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="currency">$</span>
+                                <span class="amount">499</span>
+                                <span class="period">/night</span>
+                            </div>
+                            <button class="book-btn">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities" id="amenities">
+        <div class="container">
+            <div class="section-header">
+                <h2>World-Class Amenities</h2>
+                <p>Discover everything you need for an unforgettable stay</p>
+            </div>
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1576678927484-cc907957a753?w=400&q=80" alt="Swimming Pool">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Olympic Swimming Pool</h3>
+                        <p>State-of-the-art heated pool with cabanas, spa jets, and poolside dining.</p>
+                    </div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80" alt="Fine Dining">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Fine Dining Restaurant</h3>
+                        <p>Michelin-starred cuisine prepared by renowned international chefs.</p>
+                    </div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1585779033100-9f4a6a1d6d5b?w=400&q=80" alt="Spa">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Luxury Spa & Wellness</h3>
+                        <p>Complete spa with therapeutic treatments, sauna, and fitness center.</p>
+                    </div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&q=80" alt="Gym">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>24/7 Fitness Center</h3>
+                        <p>Modern equipment, personal trainers, and yoga studios available.</p>
+                    </div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1570129477492-45a003537e1f?w=400&q=80" alt="Bar">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Rooftop Bar & Lounge</h3>
+                        <p>Signature cocktails and panoramic city views in our exclusive bar.</p>
+                    </div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=400&q=80" alt="Concierge">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Concierge Service</h3>
+                        <p>Expert staff available 24/7 to arrange tours, reservations, and experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hotel Gallery</h2>
+                <p>Explore the beauty of our property</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1561428264-fea92036ad70?w=800&q=80" alt="Lobby">
+                    <div class="gallery-overlay">
+                        <h3>Grand Lobby</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" alt="Suite">
+                    <div class="gallery-overlay">
+                        <h3>Luxury Suites</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1574909779474-e1a6cbf46a96?w=400&q=80" alt="Conference">
+                    <div class="gallery-overlay">
+                        <h3>Conference Rooms</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1520529063061-4c0bf90b5f21?w=400&q=80" alt="Dining">
+                    <div class="gallery-overlay">
+                        <h3>Dining Hall</h3>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=800&q=80" alt="Terrace">
+                    <div class="gallery-overlay">
+                        <h3>Rooftop Terrace</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=400&q=80" alt="Bathroom">
+                    <div class="gallery-overlay">
+                        <h3>Luxury Bathrooms</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Plan Your Stay</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Luxury Lane, Paradise City, PC 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>reservations@luxuryhaven.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>24/7 Concierge Service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Luxury Haven</h4>
+                <p>Premium hospitality experience with world-class amenities and service.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">𝕏</a>
+                    <a href="#" class="social-icon">in</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxury Haven Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
